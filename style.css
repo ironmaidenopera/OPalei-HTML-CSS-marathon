@@ -1,7 +1,18 @@
-body {
-    margin: 0;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+section {
+    height: 800px;
+}
+
+/* #region header */
 .header {
     display: flex;
     flex-direction: column;
@@ -19,24 +30,35 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
+/* #endregion header */
+/* #region menu */
 .menu {
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
     height: 100vh;
     padding: 64px 120px;
     background-color: #E8EFF9;
-    background-size: cover;  
 }
 
 .menu__top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 64px;
 }
-
-.menu__bottom {
+/* #endregion menu */
+/* #region nav */
+.nav {
     display: flex;
     flex-direction: column;
-    padding: 152x 120px;
+    gap: 32px;
 }
+
+.nav__link {
+    color: #292929;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* #endregion nav */
