@@ -1,5 +1,6 @@
+/* #region page */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -11,9 +12,9 @@ body {
 }
 
 section {
-    height: 800px;
+    /* height: 720px; */
 }
-
+/* #endregion page */
 /* #region header */
 .header {
     display: flex;
@@ -22,7 +23,7 @@ section {
     box-sizing: border-box;
     height: 100vh;
     padding: 64px 120px;
-    background-image: url(images/Headphones-image-1.png);
+    background-image: url(images/header-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,11 +85,12 @@ section {
     letter-spacing: 2px;
 }
 /* #endregion nav */
-
+/* #region main */
 .main {
     padding: 120px;
+    background-color: #fff;
 }
-
+/* #endregion main */
 /* #region recommended */
 .recommended {
     margin-bottom: 120px;
@@ -109,16 +111,20 @@ section {
     justify-content: center;
     gap: 24px;
 }
-
+/* #endregion recommended */
+/* #region product */
+.product {
+    flex-basis: 324px;
+}
 .product__photo {
-    width: 324px;
-    height: 320px;
     margin-bottom: 32px;
 }
 
 .product__title {
     margin-top: 0;
     margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 140%;
 }
 
 .product__category {
@@ -130,8 +136,14 @@ section {
     margin: 0;
     font-weight: bold;
 }
+/* #endregion product */
+/* #region categories */
+.categories {
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
 
-/* #endregion recommended */
 .categories__title {
     margin-top: 0;
     margin-bottom: 64px;
@@ -141,12 +153,74 @@ section {
     text-align: center;
     letter-spacing: -1.5px;
 }
+/* #endregion categories */
+/* #region category */
+.category__photos {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.category {
+    margin-bottom: 64px;
+}
+
+.category__title {
+    margin: 0;
+}
+
+.photo-wide {
+    width: 65%;
+}
+
+.photo-square {
+    width: 32%;
+}
+/* #endregion category */
+/* #region how-to-buy */
+.how-to-buy {
+    max-width: 1020px;
+    margin: 0 auto;
+    /* margin-bottom: 120px; */
+    display: flex;
+    gap: 24px;
+}
 
 .how-to-buy__title {
+    flex-basis: 50%;
     margin-top: 0;
     margin-bottom: 64px;
     font-size: 48px;
     line-height: 100%;
     font-weight: 700;
+    text-align: left;
     letter-spacing: -1.5px;
 }
+
+.how-to-buy__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.how-to-buy__content {
+    flex-basis: 50%;
+}
+/* #endregion how-to-buy */
+/* #region footer */
+.footer {
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    height: 460px;
+    background-image: url(images/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* #endregion footer */
